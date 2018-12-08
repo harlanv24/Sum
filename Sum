@@ -1,0 +1,77 @@
+// Nami Lindquist
+
+// December 7, 2018
+
+// Period 2
+
+// Project description: Sums the numbers in each row and counts how many rows there are. Shows the sum of the numbers, the equation used to sum the numbers, and how many rows of numbers there were.
+
+ 
+
+import java.util.*;
+
+ 
+
+public class Sum {
+
+ 
+
+       public static void main(String[] args) {
+
+                          
+
+             int[] array = new int[25]; // establishing a new array
+
+            
+
+             Scanner sc = new Scanner(System.in);
+
+            
+
+             Scanner arraysc = new Scanner(Arrays.toString(array));  // Scanner that reads arrays
+
+             String line = arraysc.next();
+
+             Scanner linesc = new Scanner(line); // Scanner that reads Strings within arrays
+
+            
+
+             // counting the number of lines
+
+             int lineCount = 0;
+
+             while(linesc.hasNextLine()) {
+
+                    lineCount++;
+
+             }
+
+            
+
+             // converting Strings into Int to add the numbers
+
+             int total = 0;
+
+             for(int i = 0; i < array.length; i++) {
+
+                    int number = line.charAt(i);
+
+                    total += number;
+
+             }
+
+            
+
+             System.out.println(total);
+
+                           }
+
+ 
+
+            
+
+            
+
+       }
+
+}
